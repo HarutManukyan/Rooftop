@@ -1,0 +1,155 @@
+.booking {
+  &__title {
+    @include title;
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  &__edit {
+    display: inline;
+    height: 6rem;
+    width: 3rem;
+
+    color: #523687 !important;
+
+    &-container {
+      padding: 0 1rem;
+      transition: all 0.3s;
+      cursor: pointer;
+      position: relative;
+      left: -2px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &:hover {
+        background-color: $color-secondary;
+      }
+      &:hover .booking__edit {
+        fill: $color-primary;
+      }
+    }
+
+    &-done {
+      // padding: 1rem;
+      border-radius: 50%;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: green;
+        transform: scale(1.03);
+
+        & .done__btn {
+          fill: $color-primary;
+        }
+      }
+    }
+    &-cancel {
+      // padding: 1rem;
+      border-radius: 50%;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: red;
+        transform: scale(1.03);
+
+        & .cancel__btn {
+          fill: $color-primary;
+        }
+      }
+    }
+
+    &-btns {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      gap: 2rem;
+    }
+  }
+
+  &__input {
+    display: block;
+    margin: 2rem 0;
+
+    width: 40rem;
+    padding: 2rem 1rem;
+
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+
+    color: $color-primary;
+
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__datepicker {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    color: $color-secondary;
+    background-color: $color-primary;
+    border: 3px solid $color-secondary;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border-radius: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: $color-secondary;
+      color: $color-primary;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.done__btn,
+.cancel__btn {
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.done__btn {
+}
+
+.react-datepicker {
+  &__week {
+    width: 29rem;
+    font-size: 1.2rem;
+  }
+  &__day {
+    width: 4rem;
+
+    // height: 4rem;
+  }
+}
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  width: 0;
+}

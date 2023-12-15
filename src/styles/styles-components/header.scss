@@ -1,0 +1,270 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 15;
+
+  padding: 5rem;
+
+  @include respond(tab-port) {
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-img {
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+    &-name {
+      text-transform: capitalize;
+    }
+  }
+  &__burger {
+    text-transform: uppercase;
+
+    &-open {
+    }
+
+    &-in {
+      animation: header__in 0.5s ease forwards;
+    }
+
+    &-out {
+      animation: header__out 0.5s ease forwards;
+    }
+
+    &-list {
+      width: 70vw;
+      height: 100vh;
+      position: absolute;
+      right: 0%;
+      top: 0;
+
+      background: rgba(#27395c, 0.97);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+
+    &-item {
+      margin: 2rem 0;
+
+      &:hover {
+        background-color: black;
+      }
+    }
+  }
+
+  &__menu {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+
+    &-item {
+      cursor: pointer;
+      transition: all 0.3s;
+
+      @include respond(tab-port) {
+        display: block;
+        display: flex;
+        justify-content: center;
+      }
+
+      &:not(:last-child) {
+        margin-right: 7rem;
+
+        @include respond(tab-port) {
+          margin-right: 3rem;
+        }
+      }
+      &:hover {
+        text-shadow: $text-shadow;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    margin-right: 2rem;
+  }
+
+  &__login {
+    font-size: 2rem;
+
+    cursor: pointer;
+  }
+
+  &__logout {
+    background-color: $color-text;
+    width: 30vw;
+    height: 40vh;
+    transition: all 0.3s;
+    border-radius: 3px;
+
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    &-container {
+      background-color: rgba($color: #000000, $alpha: 0.9);
+
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      transition: all 0.3s;
+      animation: background 0.6s;
+    }
+
+    &-title {
+      font-size: 3rem;
+      color: $color-primary;
+      text-align: center;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+    }
+
+    &-btn {
+      width: 10rem;
+      padding: 1rem 0;
+      color: $color-primary;
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      transition: all 0.3s;
+
+      background-color: transparent;
+      border: 2px solid $color-primary;
+      border-radius: 50px;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-text;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+.logo {
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+
+  &__text {
+    transition: all 0.3s;
+    font-size: 2.5rem;
+
+    &:hover {
+      text-shadow: $text-shadow;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.in {
+  animation: in 0.5s ease forwards;
+}
+
+.out {
+  animation: out 0.8s ease forwards;
+}
+
+.background__in {
+  animation: background__in 0.5s ease forwards;
+}
+
+.background__out {
+  animation: background__out 0.8s ease forwards;
+}
+
+@keyframes in {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+@keyframes out {
+  0% {
+    top: 50%;
+  }
+
+  100% {
+    top: -100%;
+  }
+}
+@keyframes background__in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background__out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes header__in {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes header__out {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+
+  100% {
+    opacity: 0;
+    right: -100%;
+  }
+}

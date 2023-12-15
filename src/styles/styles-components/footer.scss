@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+
+  &__contacts {
+    color: $color-primary;
+    list-style: none;
+
+    &--item-title {
+      color: $color-secondary;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}

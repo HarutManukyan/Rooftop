@@ -1,0 +1,302 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "number": "001",
+      "name": "standart king",
+      "maxGuests": 4,
+      "size": 25,
+      "price": 5000,
+      "bookedDates": [
+        {
+          "startDate": "2023-12-20",
+          "endDate": "2023-12-28"
+        },
+        {
+          "startDate": "2024-01-21",
+          "endDate": "2024-01-25"
+        },
+        {
+          "startDate": "2024-02-15",
+          "endDate": "2024-02-17"
+        },
+        {
+          "startDate": "2023-12-11",
+          "endDate": "2023-12-14"
+        },
+        {
+          "startDate": "2023-12-31",
+          "endDate": "2024-01-02"
+        },
+        {
+          "startDate": "2024-01-06",
+          "endDate": "2024-01-13"
+        },
+        {
+          "startDate": "2024-01-15",
+          "endDate": "2024-01-19"
+        }
+      ],
+      "mainImg": "https://secure.travelline.sg/resource/images/rt/5012667/638277060130762178-55449d4f-1161-43fb-ae87-dc5827c4bace",
+      "secondaryImg": "https://secure.travelline.sg/resource/images/rt/5012667/638277060151680184-68ab8465-4cb7-4dc7-8f8d-cec0cd68f02e",
+      "img1": "https://secure.travelline.sg/resource/images/rt/5012667/638277060137476580-d8b2561f-9e6f-48e0-808b-39ba5931126b",
+      "img2": "https://secure.travelline.sg/resource/images/rt/5012667/638277060144482622-a0f756fc-d3f3-475f-a749-32cc4e1b35f6",
+      "aboutText1": "Experience a haven of tranquility within our spacious 'Standard King' rooms, meticulously designed to offer a seamless blend of modernity and comfort. Adorned with contemporary décor and thoughtfully curated amenities, these rooms embody the essence of relaxation.    ",
+      "aboutText2": "Indulge in the lavish comfort of a king-size bed, ensuring a restful night's sleep after a day of exploration or business engagements. The room's layout is intelligently crafted to maximize space and functionality, providing a cozy seating area perfect for unwinding or catching up on work.",
+      "roomInfo": "Feel the comfort and relax at Rooftop Apart Hotel Yerevan. Let us introduce one of our rooms of Standard category. Free Wi-Fi, delicious view and perfectly designed rooms are waiting for you."
+    },
+    {
+      "id": 2,
+      "number": "002",
+      "name": "superior king",
+      "maxGuests": 4,
+      "size": 32,
+      "price": 6200,
+      "bookedDates": [
+        {
+          "startDate": "2023-12-14",
+          "endDate": "2023-12-22"
+        },
+        {
+          "startDate": "2024-01-16",
+          "endDate": "2024-01-19"
+        },
+        {
+          "startDate": "2024-01-28",
+          "endDate": "2024-01-31"
+        },
+        {
+          "startDate": "2024-02-18",
+          "endDate": "2024-02-24"
+        },
+        {
+          "startDate": "2024-01-07",
+          "endDate": "2024-01-09"
+        },
+        {
+          "startDate": "2023-12-07",
+          "endDate": "2023-12-09"
+        },
+        {
+          "startDate": "2024-02-12",
+          "endDate": "2024-02-15"
+        },
+        {
+          "startDate": "2024-01-22",
+          "endDate": "2024-01-25"
+        },
+        {
+          "startDate": "2023-12-26",
+          "endDate": "2023-12-30"
+        },
+        {
+          "startDate": "2024-01-02",
+          "endDate": "2024-01-05"
+        },
+        {
+          "startDate": "2024-02-25",
+          "endDate": "2024-02-27"
+        },
+        {
+          "startDate": "2023-12-12",
+          "endDate": "2023-12-13"
+        }
+      ],
+      "mainImg": "https://secure.travelline.sg/resource/images/rt/5012668/638277060166774043-88211cd6-9f91-4bc3-b309-841d6494842b",
+      "secondaryImg": "https://secure.travelline.sg/resource/images/rt/5012668/638277060171281258-11649b2d-97c7-406c-b10f-2f4040d07802",
+      "img1": "https://secure.travelline.sg/resource/images/rt/5012668/638277060173504919-45ddf325-4566-454a-8f39-00f51bb044df",
+      "img2": "https://secure.travelline.sg/resource/images/rt/5012668/638277060175091974-5297d8ea-86c3-4d47-9779-042051b147b1",
+      "aboutText1": "Experience a haven of tranquility within our spacious 'Superior King' rooms, meticulously designed to offer a seamless blend of modernity and comfort. Adorned with contemporary décor and thoughtfully curated amenities, these rooms embody the essence of relaxation.    ",
+      "aboutText2": "Indulge in the lavish comfort of a king-size bed, ensuring a restful night's sleep after a day of exploration or business engagements. The room's layout is intelligently crafted to maximize space and functionality, providing a cozy seating area perfect for unwinding or catching up on work.",
+      "roomInfo": "Feel the comfort and relax at Rooftop Apart Hotel Yerevan. Let us introduce one of our rooms of Standard category. Free Wi-Fi, delicious view and perfectly designed rooms are waiting for you."
+    },
+    {
+      "id": 3,
+      "number": "003",
+      "name": "executive suite",
+      "maxGuests": 5,
+      "size": 52,
+      "price": 8200,
+      "bookedDates": [
+        {
+          "startDate": "2024-01-21",
+          "endDate": "2024-01-27"
+        },
+        {
+          "startDate": "2023-12-24",
+          "endDate": "2023-12-25"
+        },
+        {
+          "startDate": "2024-01-14",
+          "endDate": "2024-01-17"
+        },
+        {
+          "startDate": "2023-12-28",
+          "endDate": "2023-12-30"
+        },
+        {
+          "startDate": "2023-12-16",
+          "endDate": "2023-12-20"
+        },
+        {
+          "startDate": "2023-010-17",
+          "endDate": "2023-010-19"
+        },
+        {
+          "startDate": "2024-01-04",
+          "endDate": "2024-01-06"
+        },
+        {
+          "startDate": "2023-12-21",
+          "endDate": "2023-12-23"
+        }
+      ],
+      "mainImg": "https://secure.travelline.sg/resource/images/rt/5012669/638277060187395561-7907183b-fc46-4a5c-9ba4-ac0e3e096c2e",
+      "secondaryImg": "https://secure.travelline.sg/resource/images/rt/5012669/638277060191727113-239b096b-773e-4009-a920-197859dbb229",
+      "img1": "https://secure.travelline.sg/resource/images/rt/5012669/638277060193822261-46f173fc-e912-4861-8824-c82276fe30d2",
+      "img2": "https://secure.travelline.sg/resource/images/rt/5012669/638277060198822638-cdb787ae-fa68-439b-bfaf-36a2b2b6e8c9",
+      "aboutText1": "Experience a haven of tranquility within our spacious 'Executive Suite' rooms, meticulously designed to offer a seamless blend of modernity and comfort. Adorned with contemporary décor and thoughtfully curated amenities, these rooms embody the essence of relaxation.    ",
+      "aboutText2": "Indulge in the lavish comfort of a king-size bed, ensuring a restful night's sleep after a day of exploration or business engagements. The room's layout is intelligently crafted to maximize space and functionality, providing a cozy seating area perfect for unwinding or catching up on work.",
+      "roomInfo": "Feel the comfort and relax at Rooftop Apart Hotel Yerevan. Let us introduce one of our rooms of Standard category. Free Wi-Fi, delicious view and perfectly designed rooms are waiting for you."
+    },
+    {
+      "id": 4,
+      "number": "001",
+      "name": "standart king",
+      "maxGuests": 4,
+      "size": 25,
+      "price": 5000,
+      "bookedDates": [
+        {
+          "startDate": "2024-01-21",
+          "endDate": "2024-01-25"
+        },
+        {
+          "startDate": "2023-12-17",
+          "endDate": "2023-12-20"
+        },
+        {
+          "startDate": "2024-01-28",
+          "endDate": "2024-01-31"
+        }
+      ],
+      "mainImg": "https://secure.travelline.sg/resource/images/rt/5012667/638277060130762178-55449d4f-1161-43fb-ae87-dc5827c4bace",
+      "secondaryImg": "https://secure.travelline.sg/resource/images/rt/5012667/638277060151680184-68ab8465-4cb7-4dc7-8f8d-cec0cd68f02e",
+      "img1": "https://secure.travelline.sg/resource/images/rt/5012667/638277060137476580-d8b2561f-9e6f-48e0-808b-39ba5931126b",
+      "img2": "https://secure.travelline.sg/resource/images/rt/5012667/638277060144482622-a0f756fc-d3f3-475f-a749-32cc4e1b35f6",
+      "aboutText1": "Experience a haven of tranquility within our spacious 'Standard King' rooms, meticulously designed to offer a seamless blend of modernity and comfort. Adorned with contemporary décor and thoughtfully curated amenities, these rooms embody the essence of relaxation.    ",
+      "aboutText2": "Indulge in the lavish comfort of a king-size bed, ensuring a restful night's sleep after a day of exploration or business engagements. The room's layout is intelligently crafted to maximize space and functionality, providing5a cozy seating area perfect for unwinding or catching up on work.",
+      "roomInfo": "Feel the comfort and relax at Rooftop Apart Hotel Yerevan. Let us introduce one of our rooms of Standard category. Free Wi-Fi, delicious view and perfectly designed rooms are waiting for you."
+    },
+    {
+      "id": 5,
+      "number": "002",
+      "name": "superior king",
+      "maxGuests": 4,
+      "size": 32,
+      "price": 6200,
+      "bookedDates": [
+        {
+          "startDate": "2023-12-14",
+          "endDate": "2023-12-22"
+        },
+        {
+          "startDate": "2024-01-16",
+          "endDate": "2024-01-19"
+        },
+        {
+          "startDate": "2023-12-31",
+          "endDate": "2024-01-05"
+        },
+        {
+          "startDate": "2024-01-25",
+          "endDate": "2024-01-28"
+        },
+        {
+          "startDate": "2023-12-27",
+          "endDate": "2023-12-30"
+        }
+      ],
+      "mainImg": "https://secure.travelline.sg/resource/images/rt/5012668/638277060166774043-88211cd6-9f91-4bc3-b309-841d6494842b",
+      "secondaryImg": "https://secure.travelline.sg/resource/images/rt/5012668/638277060171281258-11649b2d-97c7-406c-b10f-2f4040d07802",
+      "img1": "https://secure.travelline.sg/resource/images/rt/5012668/638277060173504919-45ddf325-4566-454a-8f39-00f51bb044df",
+      "img2": "https://secure.travelline.sg/resource/images/rt/5012668/638277060175091974-5297d8ea-86c3-4d47-9779-042051b147b1",
+      "aboutText1": "Experience a haven of tranquility within our spacious 'Superior King' rooms, meticulously designed to offer a seamless blend of modernity and comfort. Adorned with contemporary décor and thoughtfully curated amenities, these rooms embody the essence of relaxation.    ",
+      "aboutText2": "Indulge in the lavish comfort of a king-size bed, ensuring a restful night's sleep after a day of exploration or business engagements. The room's layout is intelligently crafted to maximize space and functionality, providing a cozy seating area perfect for unwinding or catching up on work.",
+      "roomInfo": "Feel the comfort and relax at Rooftop Apart Hotel Yerevan. Let us introduce one of our rooms of Standard category. Free Wi-Fi, delicious view and perfectly designed rooms are waiting for you."
+    }
+  ],
+  "guest": [
+    {
+      "username": "Harut",
+      "fullName": "Harut Manukyan",
+      "nationality": "armenian",
+      "phoneNumber": "9632",
+      "roomId": [],
+      "password": "1234",
+      "image": null,
+      "additionalInfo": "",
+      "isPaid": false,
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "username": "gavi",
+      "fullName": "Pablo Gavira",
+      "nationality": "spanish",
+      "phoneNumber": "8521",
+      "roomId": [
+        5,
+        3
+      ],
+      "password": "1234",
+      "image": null,
+      "additionalInfo": "",
+      "isPaid": false,
+      "role": "user",
+      "id": 2
+    },
+    {
+      "username": "leo",
+      "fullName": "Leo Messi",
+      "nationality": "argentinian",
+      "phoneNumber": "8521",
+      "roomId": [
+        1,
+        2
+      ],
+      "password": "1234",
+      "image": null,
+      "additionalInfo": "",
+      "isPaid": false,
+      "role": "user",
+      "id": 3
+    },
+    {
+      "username": "cristiano",
+      "fullName": "Cristiano Ronaldo",
+      "nationality": "portugese",
+      "phoneNumber": "7777",
+      "roomId": [],
+      "password": "1234",
+      "image": null,
+      "additionalInfo": "",
+      "isPaid": false,
+      "role": "user",
+      "id": 4
+    },
+    {
+      "username": "iniesta",
+      "fullName": "Andres Iniesta",
+      "nationality": "spanish",
+      "phoneNumber": "8521",
+      "roomId": [],
+      "password": "1234",
+      "image": null,
+      "additionalInfo": "",
+      "isPaid": false,
+      "role": "user",
+      "id": 5
+    }
+  ]
+}

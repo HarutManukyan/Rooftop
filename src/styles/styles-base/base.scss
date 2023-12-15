@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+
+// COLORS
+
+$color-primary: #141e30;
+$color-primary-light: #283b5f;
+$color-secondary: #fad353;
+$color-secondary-light: #fdd964;
+$color-text: #fffcf6;
+
+// FONT
+$default-font-size: 1.6rem;
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Cormorant Garamond", serif;
+
+// SHADOW
+$text-shadow: #000 2px 2px 15px;
+
+// PADDING
+$main-padding: 0 2.5rem;
+
+// MIXINS
+@mixin main-gradient {
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #0f1624);
+  background: linear-gradient(to right, #243b55, #0f1624);
+}
+
+@mixin title {
+  text-transform: capitalize;
+  font-family: $font-secondary;
+  color: $color-secondary;
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 95em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 130.5em) {
+      @content;
+    } //1800
+  }
+}
+
+$light-pink: #223250;
+$pink: #141e30;
+$dark-pink: #0f1522;
+$pink-border: #0a0f18;
+$pink-shadow: #243555;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  color: $color-text;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: $default-font-size;
+  font-family: $font-primary;
+  overflow-x: hidden;
+  @include main-gradient;
+}
+a {
+  text-decoration: none;
+}
+.styled__btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  color: $color-text;
+  text-transform: uppercase;
+  padding: 1.25em 2.5em;
+  background: $light-pink;
+  border: 2px solid $pink-border;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition:
+    transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $dark-pink;
+    border-radius: inherit;
+    box-shadow:
+      0 0 0 2px $pink-border,
+      0 0.1em 0 0 $pink-shadow;
+    transform: translate3d(0, 0.75em, -1em);
+    transition:
+      transform 150ms cubic-bezier(0, 0, 0.58, 1),
+      box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  &:hover {
+    background: $pink;
+    transform: translate(0, 0.25em);
+    &::before {
+      box-shadow:
+        0 0 0 2px $pink-border,
+        0 0.1em 0 0 $pink-shadow;
+      transform: translate3d(0, 0.5em, -1em);
+    }
+  }
+  &:active {
+    background: $pink;
+    transform: translate(0em, 0.75em);
+    &::before {
+      box-shadow:
+        0 0 0 2px $pink-border,
+        0 0 $pink-shadow;
+      transform: translate3d(0, 0, -1em);
+    }
+  }
+}

@@ -1,0 +1,336 @@
+.rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  justify-content: space-around;
+  padding: 10rem 15rem;
+  &__container {
+    overflow-x: hidden;
+  }
+
+  @include respond(desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__title {
+    @include title;
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  &__item {
+    border-radius: 3px;
+    background-color: $color-text;
+    padding-bottom: 3rem;
+    color: $color-primary;
+
+    &-title {
+      text-transform: capitalize;
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      color: $color-primary;
+    }
+
+    &-img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    &-guests,
+    &-size,
+    &-price {
+      color: $color-primary;
+    }
+
+    &-price {
+      position: absolute;
+      bottom: 0rem;
+      & span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-primary;
+      }
+    }
+
+    &-info {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    &-texts {
+      padding: 3rem 2rem;
+      position: relative;
+    }
+  }
+
+  &__add-btn {
+    height: min-content;
+
+    &-container {
+      grid-column: 1/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 15rem;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    position: relative;
+
+    &-title {
+      margin: 8rem 0;
+
+      font-size: 5rem;
+      text-align: center;
+      text-transform: capitalize;
+
+      font-family: $font-secondary;
+      color: $color-secondary;
+    }
+
+    & label {
+      display: flex;
+      justify-content: center;
+      text-transform: capitalize;
+    }
+
+    & textarea {
+      height: 13rem;
+    }
+
+    &-input {
+      padding: 1rem 2rem;
+      display: block;
+      margin: 2rem auto;
+      width: 35rem;
+      color: $color-primary;
+      height: 6rem;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.room {
+  overflow-x: hidden;
+  &__top {
+    position: relative;
+    height: 100vh;
+
+    @include respond(phone) {
+      height: 80vh;
+    }
+
+    &-title {
+      font-size: 15rem;
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      color: $color-secondary;
+      margin-left: 5rem;
+      position: relative;
+      z-index: 5;
+
+      @include respond(phone) {
+        font-size: 10rem;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      z-index: 5;
+      bottom: 5rem;
+      left: 5rem;
+
+      font-size: 2.7rem;
+      width: 40rem;
+      color: $color-secondary;
+
+      @include respond(phone) {
+        font-size: 1.8rem;
+        width: 25rem;
+      }
+    }
+
+    &-btn {
+      position: absolute;
+      z-index: 5;
+      bottom: 5rem;
+      right: 5rem;
+
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-img {
+      height: 100vh;
+      width: 100vw;
+
+      position: absolute;
+
+      @include respond(phone) {
+        height: 80vh;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 15rem;
+
+    &-texts {
+      display: flex;
+      justify-content: space-around;
+
+      @include respond(tab-land) {
+        display: block;
+      }
+    }
+
+    &-title {
+      font-size: 5rem;
+      font-family: $font-secondary;
+      width: 75rem;
+      color: $color-secondary;
+
+      @include respond(tab-land) {
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      @include respond(phone) {
+        width: 80%;
+        font-size: 3.5rem;
+      }
+    }
+
+    &-text {
+      width: 30rem;
+      line-height: 25px;
+      letter-spacing: 1px;
+
+      @include respond(tab-land) {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 3rem;
+        font-size: 1.3rem;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      &-container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10rem;
+      }
+    }
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 10rem;
+    background-color: $color-text;
+    padding: 20rem 0 30rem 0;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+
+    &-left {
+      width: 80%;
+      margin: 0 auto;
+
+      &-img {
+        width: 80%;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+          width: 100%;
+        }
+
+        &-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      &-title {
+        font-family: $font-secondary;
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: $color-secondary;
+        margin-top: 2rem;
+        font-weight: 700;
+      }
+
+      &-text {
+        width: 60%;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-top: 2rem;
+        color: $color-primary;
+
+        @include respond(tab-port) {
+          width: 90%;
+        }
+      }
+    }
+
+    &-right {
+      width: 80%;
+      margin: 0 auto;
+
+      @include respond(tab-port) {
+        margin-top: 5rem;
+      }
+
+      &-img {
+        width: 80%;
+        margin: 0 auto;
+        @include respond(tab-port) {
+          width: 100%;
+        }
+
+        &-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      &-text {
+        width: 60%;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-top: 2rem;
+        color: $color-primary;
+
+        @include respond(tab-port) {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+// .room__content-img {
+//   position: relative;
+//   //   top: 5rem;
+// }

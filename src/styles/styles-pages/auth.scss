@@ -1,0 +1,77 @@
+.auth {
+  &__title {
+    @include title;
+    margin-top: 8rem;
+
+    font-size: 8rem;
+    text-align: center;
+  }
+
+  &__form {
+    display: block;
+    margin-top: 5rem;
+  }
+
+  & input,
+  textarea {
+    display: block;
+    margin: 2rem auto;
+
+    width: 40rem;
+    padding: 2rem 2.5rem;
+
+    border-radius: 3px;
+    border: none;
+    color: black;
+    transition: all 0.2s;
+
+    &:focus,
+    &:active {
+      outline: 2px solid #65a6f0;
+      transform: scale(1.01);
+    }
+  }
+
+  &__info {
+    min-height: 10rem;
+  }
+
+  &__register {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    & a {
+      margin-left: 1rem;
+      text-transform: uppercase;
+      color: #65a6f0;
+      transition: all 0.2s;
+
+      &:hover {
+        text-shadow: $text-shadow;
+      }
+    }
+  }
+
+  &__btn {
+    color: $color-primary;
+    padding: 1rem 0;
+    width: 12rem;
+    cursor: pointer;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__wrong {
+    color: red;
+    font-size: 1.8rem;
+
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+}
